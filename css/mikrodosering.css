@@ -2,11 +2,22 @@ body,
 html {
   width: 100%;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
-  font-family: Muli, Helvetica, sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  line-height: 30px;
+}
 
+@media (min-width: 576px) {
+  body {
+    font-size: 1.1rem;
+  }
 }
 
 hr {
@@ -27,7 +38,7 @@ a {
 }
 
 a:hover {
-  color: #4d2482;
+  color: #7f289e;
 }
 
 a, a:active, a:focus {
@@ -79,7 +90,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', Muli, Helvetica, sans-serif;
+  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -89,7 +100,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #4d2482;
-  font-family: 'Open Sans', Muli, Helvetica, sans-serif;
+  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -163,15 +174,9 @@ img::-moz-selection {
 }
 
 header.masthead {
-  font-family: 'Merriweather', Muli, Helvetica, sans-serif;
+  font-family: 'Merriweather', Roboto, Helvetica, sans-serif;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 header.masthead hr {
@@ -180,7 +185,7 @@ header.masthead hr {
 }
 
 header.masthead h1 {
-  font-family: 'Open Sans', Muli, Helvetica, sans-serif;
+  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
   font-size: 2rem;
 }
 
@@ -216,23 +221,12 @@ header.masthead p {
   max-width: 400px;
 }
 
-.content-box {
-  border-radius: 55px;
-  border-color: rgba(77, 36, 130, 0.5);
-  border-style: solid;
-  border-width: 2px;
-}
-
 .img-people {
     width: 10rem;
 }
 
 .text-primary {
   color: #4d2482 !important;
-}
-
-.fa:hover {
-  color: #7f289e;
 }
 
 .es-logo {
@@ -255,6 +249,195 @@ header.masthead p {
   border-color: rgba(0, 0, 0, 0) !important;
 }
 
-.test:hover {
-	background-color: #e2e6ea;
+.bg-dark a,
+.bg-dark h2,
+.bg-dark hr,
+.bg-dark strong,
+.bg-primary a,
+.bg-primary h2,
+.bg-primary hr,
+.bg-primary strong {
+  color: white;
+}
+
+.es-gradient h2 {
+  color: #4d2482;
+}
+
+h5 {
+  color: #7f289e;
+}
+
+.sr-list-positive,
+.sr-list-negative {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  vertical-align: middle;
+}
+
+.source {
+  font-size: .9rem;
+  padding-left: .4em;
+}
+
+.linkbox {
+  font-size: 1.1em;
+  background-color: #fff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.linkbox a{
+  color: #4d2482;
+}
+
+.linkbox a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.linkbox:hover {
+  background-color: #7f289e;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -moz-transform: translate(0, -6px);
+  -ms-transform: translate(0, -6px);
+  -o-transform: translate(0, -6px);
+  -webkit-transform: translate(0, -6px);
+  transform: translate(0, -6px)
+}
+
+.dropdown-menu,
+.navbar-toggler {
+  border: 0;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15)
+  }
+}
+
+.card {
+  padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+  .card {
+    padding: 0 3rem;
+  }
+}
+
+.cd-fixed-bg {  
+  min-height: 100vh;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 1025px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+}
+
+.cd-fixed-bg.cd-fixed-bg--1 {
+  background-image: url("../img/header.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--2 {
+  background-image: url("../img/cupandbook.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--3 {
+  background-image: url("../img/science.jpg");
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
+}
+
+.tlfbox {
+  background-color: #fff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.tlfbox a {
+  color: #4d2482;
+}
+
+.tlfbox a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tlfbox:hover {
+  background-color: #7f289e;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -moz-transform: translate(0, -6px);
+  -ms-transform: translate(0, -6px);
+  -o-transform: translate(0, -6px);
+  -webkit-transform: translate(0, -6px);
+  transform: translate(0, -6px)
+}
+
+.--white:hover {
+  color: #fff;
+  background-color: #7f289e !important;
+}
+
+.btn_hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn_hide {
+    display: inline-block;
+  }
+}
+
+blockquote {
+  padding: 1em 2em 0em 2em;
+  text-align: left;
+  border-left: none;
+}
+
+blockquote hr {
+  max-width: 100%;
+  border-width: 1px;
+  border-color: #fff;
+}
+
+.quote-badge {
+  background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box {
+  overflow: hidden;
+  border-radius: 17px;
+  margin-top: 25px;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quotation-mark {
+  padding-top: .2em;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text {
+  font-size: 17px;
 }

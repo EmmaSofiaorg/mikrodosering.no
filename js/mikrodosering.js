@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 57 + 1
   });
 
   // Collapse Navbar
@@ -37,44 +37,37 @@
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-
+$(window).scroll(navbarCollapse);
   // Scroll reveal calls
   window.sr = ScrollReveal();
-  sr.reveal('.sr-icons', {
+  sr.reveal('.sr-warning', {
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 200);
-  sr.reveal('.sr-contact', {
+  });
+  sr.reveal('.sr-warning2', {
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 200);
+  });
+  sr.reveal('.sr-phone', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  });
+  sr.reveal('.sr-list-positive', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  }, 10);
+  sr.reveal('.sr-list-negative', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  }, 10);
   sr.reveal('.sr-button', {
     duration: 1000,
     delay: 200
-  });
-  sr.reveal('.sr-people', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 300);
-
-  // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
   });
 
 })(jQuery); // End of use strict
