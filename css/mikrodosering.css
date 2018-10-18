@@ -8,15 +8,15 @@ html {
 body {
   font-size: 1em;
   overflow-x: hidden;;
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: 300;
-  letter-spacing: 0.18px;
-  line-height: 30px;
+  letter-spacing: 0.1px;
+  line-height: 32px;
 }
 
 @media (min-width: 576px) {
   body {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -90,7 +90,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -100,7 +100,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #4d2482;
-  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -174,8 +174,8 @@ img::-moz-selection {
 }
 
 header.masthead {
-  font-family: 'Merriweather', Roboto, Helvetica, sans-serif;
-  padding-top: 10rem;
+  font-family: 'Merriweather', Oxygen, Helvetica, sans-serif;
+  padding-top: 8em;
   padding-bottom: calc(10rem - 56px);
 }
 
@@ -185,17 +185,33 @@ header.masthead hr {
 }
 
 header.masthead h1 {
-  font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-family: Oxygen, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
 }
 
 header.masthead p {
   font-weight: 300;
 }
 
+@media (min-width: 512px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+  header.masthead {
+    padding-top: 6em;
+  }
+}
+
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
   }
 }
 
@@ -230,7 +246,9 @@ header.masthead p {
 }
 
 .es-logo {
+  font-family: Raleway, Helvetica, sans-serif;
   letter-spacing: 0.3em;
+  font-weight: 400;
   padding: 0rem 1rem 0rem 2rem;
 }
 
@@ -264,8 +282,26 @@ header.masthead p {
   color: #4d2482;
 }
 
+h2 {
+  font-size: 26px;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 37px;
+    letter-spacing: 0.18px;
+  }
+}
+
 h5 {
   color: #7f289e;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 .sr-list-positive,
@@ -425,15 +461,14 @@ blockquote hr {
 .quote-box {
   overflow: hidden;
   border-radius: 17px;
-  margin-top: 25px;
   color: white;
   box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
 
 .quotation-mark {
-  padding-top: .2em;
+  padding-top: .3em;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 90px;
   color: white;
   font-family: "Times New Roman", Georgia, Serif;
 }
@@ -444,4 +479,8 @@ blockquote hr {
 
 #kontakt .fa-2x {
   font-size: 1.8em;
+}
+
+.fa-link {
+  font-size: .9em;
 }
