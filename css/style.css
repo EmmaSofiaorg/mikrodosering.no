@@ -180,7 +180,21 @@ img::-moz-selection {
   color: #5f5aff;
 }
 
+.showitem {
+  display: none;
+}
+
+.hideitem {
+  display: block;
+}
+
 @media (min-width: 992px) {
+  .hideitem {
+    display: none;
+  }
+  .showitem {
+    display: block;
+  }
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -515,10 +529,6 @@ footer ul.quicklinks {
 
 .bg-white {
   background-color: white;
-}
-
-#nav-contact a:hover {
-  color: #5f5aff;
 }
 
 .darkbg {
