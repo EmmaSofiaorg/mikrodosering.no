@@ -287,7 +287,7 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     header.masthead .intro-text {
       padding-top: 150px;
     }
@@ -296,6 +296,25 @@ header.masthead .intro-text .intro-heading {
     padding-right: 150px;
   }
 }
+
+@media (min-height: 840px) {
+    header.masthead .intro-text {
+      padding-top: 200px;
+    }
+}
+
+@media (min-height: 900px) {
+    header.masthead .intro-text {
+      padding-top: 250px;
+    }
+}
+
+@media (min-height: 1100px) {
+    header.masthead .intro-text {
+      padding-top: 350px;
+    }
+}
+
 
 .hero {
   display: table;
