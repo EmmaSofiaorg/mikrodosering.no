@@ -142,7 +142,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-toggler {
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   font-size: 12px;
   right: 0;
   padding: 13px;
@@ -151,11 +151,6 @@ img::-moz-selection {
   border: 0;
   background-color: #5f5aff;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-toggler:active {
-  background-color: #f1f0ff;
-  color: #222;
 }
 
 #mainNav .navbar-toggler:hover {
@@ -554,13 +549,8 @@ footer ul.quicklinks {
   color: #222;
 }
 
-.btn:active {
-  background-color: #f1f0ff;
-  color: #222;
-}
-
 .btn {
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   background-color: #5f5aff;
   color: white;
 }
