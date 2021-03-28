@@ -47,17 +47,17 @@ h4,
 h5 {
   font-weight: 700;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #222;
 }
 
 h6 {
   font-weight: 600;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #222;
 }
 
 strong {
-  color: #333;
+  color: #222;
 }
 
 section {
@@ -325,7 +325,7 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #222;
 }
 
 #more .grid-item {
