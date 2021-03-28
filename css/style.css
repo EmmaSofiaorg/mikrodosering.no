@@ -537,3 +537,14 @@ footer ul.quicklinks {
   left: 0.25em;
   position: relative;
 }
+
+.btn:hover {
+  background-color: #f1f0ff;
+  color: #222;
+}
+
+.btn {
+  transition-duration: 0.4s;
+  background-color: #5f5aff;
+  color: white;
+}
