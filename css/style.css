@@ -1,6 +1,80 @@
+/* space-grotesk-500 - latin */
 @font-face {
-font-family: "SpaceGrotesk";
-src: url("../fonts/SpaceGrotesk.woff2") format("woff2");
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/space-grotesk-v5-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/space-grotesk-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/space-grotesk-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/space-grotesk-v5-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/space-grotesk-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/space-grotesk-v5-latin-500.svg#SpaceGrotesk') format('svg'); /* Legacy iOS */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v3-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/inter-v3-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inter-v3-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inter-v3-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inter-v3-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inter-v3-latin-600.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+:root {
+    --space-xs: clamp(4px, 1.2vw, 8px);
+    --space-sm: clamp(8px, 1.6vw, 12px);
+    --space-md: clamp(12px, 3.2vw, 24px);
+    --space-lg: clamp(24px, 7.4vw, 56px);
+    --space-xl: clamp(48px, 10.2vw, 96px);
+    --space-xxl: clamp(96px, 20.7vw, 164px);
+    --section-padding: clamp(96px, 20.7vw, 200px);
+    --page-bleed: clamp(16px, 3vw, 75px);
+    --header-height: clamp(120px, 19.1vw, 200px);
+    --ff-default: "Inter";
+    --ff-heading: "Space Grotesk";
+    --container-xs: 320px;
+    --container-sm: 640px;
+    --container-md: 880px;
+    --container-lg: 1100px;
+    --container-xl: 1680px;
+    --fs-heading-lg: clamp(40px, 4.3vw, 80px);
+    --fs-heading-md: clamp(32px, 3.4vw, 64px);
+    --fs-heading-sm: clamp(26px, 2.5vw, 48px);
+    --fs-heading-sub: clamp(24px, 1.7vw, 32px);
+    --fs-ingress: clamp(19px, 1.4vw, 24px);
+    --fs-body: clamp(16px, 1.1vw, 20px);
+    --fs-link: clamp(16px, 1.1vw, 20px);
+    --fs-label: clamp(13px, 0.9vw, 16px);
+    --fs-footnote: clamp(13px, 1vw, 18px);
+    --line-height: 1.5;
+    --element-lg: clamp(64px, 4.5vw, 86px);
+    --element-md: clamp(32px, 3.4vw, 64px);
+    --color-vibrant-blue: #5f5aff;
+    --color-vibrant-blue-hover: #4d49e9;
+    --color-dusty-lilac: #f1f0ff;
+    --color-white: white;
+    --color-contrast: #222222;
+    --color-outline: var(--color-vibrant-blue);
 }
 
 body,
@@ -8,13 +82,14 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   padding-bottom: 0;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 p {
@@ -26,15 +101,16 @@ a {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 a:hover {
   color: #222;
-  text-decoration: underline;
   outline: none;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 a:focus {
@@ -50,14 +126,15 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 700;
-  font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: medium;
+  font-family: var(--ff-heading);
   color: #222;
 }
 
 h6 {
-  font-weight: 600;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #222;
 }
 
@@ -84,16 +161,15 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 50px;
-  text-transform: none;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+  color: #5f5aff;
+  }
 
 .btn {
-  font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: var(--ff-heading);
+  font-weight: bold;
 }
 
 .btn-xl {
@@ -146,6 +222,14 @@ img::-moz-selection {
   background-color: #222;
 }
 
+#mainNav a {
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+}
+
 #mainNav .navbar-toggler {
   transition-duration: 0.2s;
   font-size: 12px;
@@ -155,7 +239,7 @@ img::-moz-selection {
   color: white;
   border: 0;
   background-color: #5f5aff;
-  font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--ff-heading);
 }
 
 #mainNav .navbar-toggler:hover {
@@ -165,7 +249,6 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #5f5aff;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -178,7 +261,6 @@ img::-moz-selection {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -250,15 +332,14 @@ header.masthead .intro-text {
 
 header.masthead .intro-text .intro-lead-in {
   line-height: 22px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: medium;
   line-height: 50px;
   letter-spacing: 1px;
-  font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--ff-heading);
 }
 
 @media (min-width: 576px) {
@@ -281,14 +362,13 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead .intro-text .intro-lead-in {
     line-height: 40px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
-    font-weight: 700;
+    font-weight: medium;
     line-height: 75px;
     margin-bottom: 25px;
-    font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--ff-heading);
   }
 }
 
@@ -363,14 +443,6 @@ header.masthead .intro-text .intro-heading {
   opacity: .75;
 }
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-  font-size: 18px;
-  font-weight: 600;
-  color: #222;
-}
-
 #more .grid-item {
   right: 0;
   margin: 0 0 15px;
@@ -436,7 +508,6 @@ header.masthead .intro-text .intro-heading {
 #more .grid-item .grid-caption p {
   font-size: 16px;
   margin: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #more * {
@@ -475,7 +546,7 @@ header.masthead .intro-text .intro-heading {
 .grid-modal .modal-content p.item-intro {
   font-size: 16px;
   margin: 20px 0 30px;
-  font-family: 'SpaceGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--ff-heading);
 }
 
 .grid-modal .modal-content ul.list-inline {
@@ -570,4 +641,27 @@ header.masthead .intro-text .intro-heading {
 
 button::-moz-focus-inner {
   border: 0;
+}
+
+.link__el {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: medium;
+}
+
+.link__postfix {
+    font-weight: 500;
+    color: currentColor;
+    padding-left: 0.1em;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bottomlink {
+  padding-left: 1.1em;
 }
