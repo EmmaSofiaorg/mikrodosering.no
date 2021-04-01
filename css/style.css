@@ -69,12 +69,14 @@
     --line-height: 1.5;
     --element-lg: clamp(64px, 4.5vw, 86px);
     --element-md: clamp(32px, 3.4vw, 64px);
-    --color-vibrant-blue: #5f5aff;
-    --color-vibrant-blue-hover: #4d49e9;
+    --color-vibrant-violet: #5f5aff;
+    --color-vibrant-violet-hover: #4d49e9;
+    --color-calming-lavender: #ccc9ff;
+    --color-deep-charcoal: #222;
     --color-dusty-lilac: #f1f0ff;
     --color-white: white;
     --color-contrast: #222222;
-    --color-outline: var(--color-vibrant-blue);
+    --color-outline: var(--color-vibrant-violet);
 }
 
 body,
@@ -83,6 +85,7 @@ html {
   width: 100%;
   margin: 0;
   text-rendering: optimizeLegibility;
+  overflow-anchor: none;
 }
 
 body {
@@ -240,8 +243,8 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-toggler:hover {
-  background-color: #f1f0ff;
-  color: #222;
+  background-color: var(--color-vibrant-violet-hover);
+  color: white;
 }
 
 #mainNav .navbar-brand {
@@ -488,7 +491,6 @@ header.masthead .intro-text .intro-heading {
 
 #more .grid-item .grid-caption {
   max-width: 400px;
-  height: 150px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
@@ -624,8 +626,8 @@ header.masthead .intro-text .intro-heading {
 }
 
 .btn:hover {
-  background-color: #f1f0ff;
-  color: #222;
+  background-color: var(--color-vibrant-violet-hover);
+  color: white;
 }
 
 .btn {
@@ -665,4 +667,17 @@ button::-moz-focus-inner {
   .warningLeft {
     display: none;
   }
+}
+
+.card-header {
+  border: none;
+  background-color: var(--color-dusty-lilac);
+}
+
+.card {
+  border: 2px solid var(--color-calming-lavender);
+}
+
+.mutedText {
+  color: var(--color-vibrant-violet);
 }
