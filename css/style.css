@@ -154,10 +154,6 @@ section h2.section-heading {
   margin-bottom: 1em;
 }
 
-@media (min-width: 576px) {
-  section h2.section-heading {
-  }
-}
 
 section h3.section-subheading {
   font-size: 14px;
@@ -511,7 +507,7 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #more .grid-item {
     margin: 0 0 30px;
   }
@@ -680,4 +676,17 @@ button::-moz-focus-inner {
 
 .mutedText {
   color: var(--color-vibrant-violet);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .link__postfix {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .link__postfix {
+      display: inline-block;
+  }
 }
