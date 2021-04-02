@@ -208,7 +208,7 @@ img::-moz-selection {
   color: white;
   border: 0;
   background-color: #5f5aff;
-  font-family: var(--ff-heading);
+  font-family: var(--ff-heading);;
 }
 
 #mainNav .navbar-toggler:hover {
@@ -319,7 +319,7 @@ header.masthead .intro-text .intro-heading {
   font-weight: medium;
   line-height: 50px;
   font-family: var(--ff-heading);
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 576px) {
@@ -675,7 +675,12 @@ button::-moz-focus-inner {
   }
 }
 
-
 .bottomlink {
   padding-left: 0.9em;
+}
+
+@media (min-width: 350px) {
+  header.masthead .intro-text .intro-heading {
+    letter-spacing: 3px;
+  }
 }
