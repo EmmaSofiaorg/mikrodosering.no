@@ -129,7 +129,7 @@ section h2.section-heading {
 
 section h3.section-subheading {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.5em;
   color: #5f5aff;
   text-transform: uppercase;
@@ -663,9 +663,6 @@ button::-moz-focus-inner {
   .link__postfix {
       display: inline-block;
   }
-  .bottomlink {
-    padding-left: 1.1em;
-  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
@@ -674,5 +671,11 @@ button::-moz-focus-inner {
   }
   .bottomlink {
     padding-left: 0;
+    padding-right: 0.7em;
   }
+}
+
+
+.bottomlink {
+  padding-left: 0.9em;
 }
