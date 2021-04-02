@@ -59,6 +59,7 @@ html {
   margin: 0;
   text-rendering: optimizeLegibility;
   overflow-anchor: none;
+  background-color: black;
 }
 
 body {
