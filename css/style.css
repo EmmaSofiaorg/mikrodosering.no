@@ -3,6 +3,7 @@
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 500;
+  font-display: swap
   src: url('../fonts/space-grotesk-v5-latin-500.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/space-grotesk-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
