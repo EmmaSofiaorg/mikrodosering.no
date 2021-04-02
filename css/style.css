@@ -12,34 +12,6 @@
        url('../fonts/space-grotesk-v5-latin-500.svg#SpaceGrotesk') format('svg'); /* Legacy iOS */
 }
 
-/* inter-regular - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/inter-v3-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
-}
-
-/* inter-600 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/inter-v3-latin-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/inter-v3-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/inter-v3-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/inter-v3-latin-600.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/inter-v3-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/inter-v3-latin-600.svg#Inter') format('svg'); /* Legacy iOS */
-}
-
 :root {
     --space-xs: clamp(4px, 1.2vw, 8px);
     --space-sm: clamp(8px, 1.6vw, 12px);
@@ -157,10 +129,11 @@ section h2.section-heading {
 
 section h3.section-subheading {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 1.5em;
   color: #5f5aff;
   text-transform: uppercase;
+  font-family: var(--ff-default);
   }
 
 .btn {
@@ -308,7 +281,7 @@ img::-moz-selection {
 
 header.masthead {
   text-align: center;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header@0.5x.jpg");
   color: white;
   min-height: 800px;
   height: 100%;
@@ -319,6 +292,18 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@media (min-width: 800px) {
+  header.masthead {
+    background-image: url("../img/header@1x.jpg");
+  }
+}
+
+@media (min-width: 1400px) {
+  header.masthead {
+    background-image: url("../img/header@2x.jpg");
+  }
 }
 
 header.masthead .intro-text {
