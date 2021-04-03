@@ -108,14 +108,13 @@ strong {
 }
 
 section {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 section h2.section-heading {
-  font-size: 30px;
+  font-size: 1.5em;
   margin-bottom: 1em;
 }
-
 
 section h3.section-subheading {
   font-size: 14px;
@@ -360,9 +359,6 @@ header.masthead .intro-text .intro-heading {
     margin-top: 2em;
     margin-bottom: 3em;
   }
-  section {
-    padding: 3em 0;
-  }
 }
 
 @media (min-width: 576px) {
@@ -378,6 +374,12 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-image {
     margin-top: 1em;
     margin-bottom: 3em;
+  }
+  section {
+    padding: 2em 0;
+  }
+  section h2.section-heading {
+    font-size: 2em;
   }
 }
 
