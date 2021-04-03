@@ -44,7 +44,7 @@
     <link rel="preload" href="/fonts/space-grotesk-v5-latin-500.woff2" as="font" crossorigin="anonymous" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="preload">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -91,7 +91,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead preload">
+    <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="row mt-4">
@@ -671,15 +671,7 @@
     </section>
 
 
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
-
-    <script>
-      $(window).load(function() {
-        $("body").removeClass("preload");
-      });
-    </script>
+    <script>document.documentElement.classList.remove("no-js");</script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
