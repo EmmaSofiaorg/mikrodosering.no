@@ -108,7 +108,7 @@ strong {
 }
 
 section {
-  padding: 50px 0;
+  padding: 2em 0;
 }
 
 section h2.section-heading {
@@ -359,6 +359,9 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-image {
     margin-top: 2em;
     margin-bottom: 3em;
+  }
+  section {
+    padding: 3em 0;
   }
 }
 
