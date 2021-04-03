@@ -266,8 +266,10 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
+  #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: white;
+  }
 }
-
 header.masthead {
   text-align: center;
   color: white;
