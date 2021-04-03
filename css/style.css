@@ -14,34 +14,8 @@
 }
 
 :root {
-    --space-xs: clamp(4px, 1.2vw, 8px);
-    --space-sm: clamp(8px, 1.6vw, 12px);
-    --space-md: clamp(12px, 3.2vw, 24px);
-    --space-lg: clamp(24px, 7.4vw, 56px);
-    --space-xl: clamp(48px, 10.2vw, 96px);
-    --space-xxl: clamp(96px, 20.7vw, 164px);
-    --section-padding: clamp(96px, 20.7vw, 200px);
-    --page-bleed: clamp(16px, 3vw, 75px);
-    --header-height: clamp(120px, 19.1vw, 200px);
     --ff-default: "Inter";
     --ff-heading: "Space Grotesk";
-    --container-xs: 320px;
-    --container-sm: 640px;
-    --container-md: 880px;
-    --container-lg: 1100px;
-    --container-xl: 1680px;
-    --fs-heading-lg: clamp(40px, 4.3vw, 80px);
-    --fs-heading-md: clamp(32px, 3.4vw, 64px);
-    --fs-heading-sm: clamp(26px, 2.5vw, 48px);
-    --fs-heading-sub: clamp(24px, 1.7vw, 32px);
-    --fs-ingress: clamp(19px, 1.4vw, 24px);
-    --fs-body: clamp(16px, 1.1vw, 20px);
-    --fs-link: clamp(16px, 1.1vw, 20px);
-    --fs-label: clamp(13px, 0.9vw, 16px);
-    --fs-footnote: clamp(13px, 1vw, 18px);
-    --line-height: 1.5;
-    --element-lg: clamp(64px, 4.5vw, 86px);
-    --element-md: clamp(32px, 3.4vw, 64px);
     --color-vibrant-violet: #5f5aff;
     --color-vibrant-violet-hover: #4d49e9;
     --color-calming-lavender: #ccc9ff;
@@ -293,6 +267,20 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .no-js header.masthead {
