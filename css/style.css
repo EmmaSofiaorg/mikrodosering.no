@@ -324,8 +324,17 @@ header.masthead {
   }
 }
 
+header.masthead .intro-button {
+  margin-top: .5em;
+}
+
+header.masthead .intro-image {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
 header.masthead .intro-text {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -340,12 +349,32 @@ header.masthead .intro-text .intro-heading {
   letter-spacing: 1px;
 }
 
+@media (min-height: 700px) {
+  header.masthead .intro-text {
+    padding-top: 120px;
+  }
+  header.masthead .intro-button {
+    margin-top: 2em;
+  }
+  header.masthead .intro-image {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+}
+
 @media (min-width: 576px) {
   header.masthead .intro-text {
     padding-top: 120px;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 50px;
+  }
+  header.masthead .intro-button {
+    margin-top: 3em;
+  }
+  header.masthead .intro-image {
+    margin-top: 1em;
+    margin-bottom: 3em;
   }
 }
 
