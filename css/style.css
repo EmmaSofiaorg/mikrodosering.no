@@ -283,7 +283,6 @@ img::-moz-selection {
 
 header.masthead {
   text-align: center;
-  background-image: url("../img/header@0.5x.jpg");
   color: white;
   min-height: 800px;
   height: 100%;
@@ -296,15 +295,39 @@ header.masthead {
   background-size: cover;
 }
 
+.no-js header.masthead {
+  background-image: url("../img/header@1x.jpg");
+}
+
+.no-webp header.masthead {
+  background-image: url("../img/header@1x.jpg");
+}
+
+.webp header.masthead {
+  background-image: url("../img/header@1x.webp");
+}
+
 @media (min-width: 800px) {
-  header.masthead {
+  .no-js header.masthead {
     background-image: url("../img/header@1x.jpg");
+  }
+  .no-webp header.masthead {
+    background-image: url("../img/header@1x.jpg");
+  }
+  .webp header.masthead {
+    background-image: url("../img/header@1x.webp");
   }
 }
 
 @media (min-width: 1400px) {
-  header.masthead {
+  .no-js header.masthead {
     background-image: url("../img/header@2x.jpg");
+  }
+  .no-webp header.masthead {
+    background-image: url("../img/header@2x.jpg");
+  }
+  .webp header.masthead {
+    background-image: url("../img/header@2x.webp");
   }
 }
 
