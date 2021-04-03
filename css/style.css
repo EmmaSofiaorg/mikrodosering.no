@@ -45,7 +45,7 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 1s;
-  animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
@@ -55,6 +55,13 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 p {
