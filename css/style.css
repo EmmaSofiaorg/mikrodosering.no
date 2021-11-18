@@ -738,3 +738,13 @@ button::-moz-focus-inner {
     letter-spacing: 3px;
   }
 }
+
+.extLink {
+  font-size: 98%;
+  margin-bottom: .5em;
+}
+
+sup {
+  margin-left: -2px;
+  margin-right: 1px;
+}
